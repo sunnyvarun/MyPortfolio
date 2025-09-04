@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Custom properties */
+:root {
+  --cyber-black: #0d0d12;
+  --cyber-blue: #00f5ff;
+  --cyber-purple: #b967ff;
+  --cyber-pink: #ff2a6d;
+}
+
+/* Base styles */
+body {
+  background-color: var(--cyber-black);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Glitch effect */
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 var(--cyber-pink);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 var(--cyber-blue);
+  animation: glitch-anim2 5s infinite linear alternate-reverse;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+}
+
+/* Particles background */
+.particles-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 5px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 4px);
+  background-size: 550px 550px, 350px 350px, 250px 250px;
+  background-position: 0 0, 40px 60px, 130px 270px;
+  animation: particles 20s infinite linear;
+  z-index: -1;
+}
+
+/* Holographic border */
+.holographic-border {
+  padding: 5px;
+  background: linear-gradient(45deg, var(--cyber-blue), var(--cyber-purple), var(--cyber-pink), var(--cyber-blue));
+  background-size: 400% 400%;
+  border-radius: 10px;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Animations */
+@keyframes glitch-anim {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitch-anim2 {
+  0% { transform: translate(0); }
+  20% { transform: translate(2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(-2px, 2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes particles {
+  from { transform: translateY(0px); }
+  to { transform: translateY(550px); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shine {
+  0% { left: -50%; }
+  100% { left: 100%; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cyber-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cyber-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyber-purple);
+}
