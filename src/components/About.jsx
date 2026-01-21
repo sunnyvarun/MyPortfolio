@@ -10,9 +10,9 @@ const About = () => {
         </div>
         <div className="max-w-md">
           <p className="text-gray-300 mb-6">
-            Motivated B.Tech Information Technology student at SNIST with strong analytical, 
-            communication, and problem-solving skills. Passionate about full stack development, 
-            Java, and UI/UX design.
+          Early-career Full Stack Developer with hands-on experience building and maintaining web applications using Java, PHP, React.js, and
+MySQL. Experienced in developing secure admin dashboards, REST-based systems, and database-driven platforms. Strong foundation
+in data structures, software development lifecycle, and collaborative engineering environments.
           </p>
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row">

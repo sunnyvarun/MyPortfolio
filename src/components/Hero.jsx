@@ -13,7 +13,10 @@ const Hero = () => {
           <a href="#projects" className="px-6 py-3 bg-[#00f5ff] text-[#0d0d12] font-bold rounded hover:bg-[#b967ff] transition-colors">
             View Projects
           </a>
-          <a href="#contact" className="px-6 py-3 border border-[#00f5ff] text-[#00f5ff] font-bold rounded hover:bg-[#00f5ff] hover:text-[#0d0d12] transition-colors">
+          <a href="https://flowcv.com/resume/i79mf228livr" className="px-6 py-3 border border-[#00f5ff] text-[#00f5ff] font-bold rounded hover:bg-[#00f5ff] hover:text-[#0d0d12] transition-colors">
+          View Resume
+          </a>
+          <a href="#contact" className="px-6 py-3 bg-[#00f5ff] text-[#0d0d12] font-bold rounded hover:bg-[#b967ff] transition-colors">
             Contact Me
           </a>
         </div>
