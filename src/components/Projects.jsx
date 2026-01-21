@@ -40,7 +40,7 @@ const Projects = () => {
   }
 
   return (
-    <section className="py-20 px-4 relative">
+    <section id="projects" className="py-20 px-4 relative">
       {/* Particles background effect */}
       <div className="particles-background absolute inset-0"></div>
       

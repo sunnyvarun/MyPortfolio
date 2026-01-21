@@ -6,7 +6,7 @@ const About = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-[#00f5ff]">The Mind Behind the Screen</h2>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="holographic-border">
-          <img src="/images/profile.jpg" alt="Sunchu Varunkanth" className="w-48 h-48 rounded-lg" />
+          <img src="/images/F88A8A42-5035-4F69-A32E-3774E174D8DB_1_201_a.jpeg" alt="Sunchu Varunkanth" className="w-full h-48 rounded-lg" />
         </div>
         <div className="max-w-md">
           <p className="text-gray-300 mb-6">

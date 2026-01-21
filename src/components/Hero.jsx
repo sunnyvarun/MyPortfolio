@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="glitch text-4xl md:text-6xl font-bold mb-4 text-white" data-text="SUNCHU VARUNKANTH">
           SUNCHU VARUNKANTH
         </h1>
-        <p className="text-[#b967ff] text-xl md:text-2xl mb-8">Web Developer crafting digital experiences.</p>
+        <p className="text-[#b967ff] text-xl md:text-2xl mb-8">Web Developer | Automation Tester </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="#projects" className="px-6 py-3 bg-[#00f5ff] text-[#0d0d12] font-bold rounded hover:bg-[#b967ff] transition-colors">
             View Projects
