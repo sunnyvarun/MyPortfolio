@@ -36,10 +36,10 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4 relative bg-[#1a1a1a]">
       
       
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#00f5ff]" data-text="Transmission Hub">Contact</h2>
-      <p className="text-center text-[#b967ff] mb-12 max-w-2xl mx-auto">Ready to collaborate? Send a message and I'll respond ASAP</p>
+      {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#00f5ff]" data-text="Transmission Hub">Contact</h2>
+      <p className="text-center text-[#b967ff] mb-12 max-w-2xl mx-auto">Ready to collaborate? Send a message and I'll respond ASAP</p> */}
       
-      {isSubmitted ? (
+      {/* {isSubmitted ? (
         <div className="max-w-md mx-auto p-6 bg-[#00f5ff] bg-opacity-10 border border-[#00f5ff] rounded-lg text-center">
           <div className="w-16 h-16 bg-[#00f5ff] rounded-full flex items-center justify-center mx-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#0d0d12]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -126,7 +126,7 @@ const Contact = () => {
             )}
           </button>
         </form>
-      )}
+      )} */}
       
       <div className="max-w-md mx-auto mt-16">
         <h3 className="text-xl font-bold text-center text-[#00f5ff] mb-6">Direct Channels</h3>
